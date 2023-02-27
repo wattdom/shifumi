@@ -1,0 +1,109 @@
+/* Typos */
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=VT323&display=swap');
+
+
+header {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 10em;
+    color: #F8F531;
+}
+
+body {
+    background-color: black;
+}
+
+#score {
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 4em;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-areas:
+    "score-title score-title" 
+    "player-score computer-score";
+
+}
+
+#score-title {
+    grid-area: score-title;
+    margin:0;
+    display: flex;
+    justify-content: center;
+}
+
+#player-score {
+    grid-area: player-score;
+    margin:0;
+}
+
+#computer-score {
+    grid-area: computer-score;
+    margin:0;
+}
+
+#gameset {
+    display: flex;
+    justify-content: space-around;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 5em;
+}
+
+#player {
+    color: #48EAF7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#computer {
+    color: #FE90FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fu-player {
+    display: none;
+}
+#shi-player {
+    display: none;
+}
+#mi-player {
+    display: none;
+}
+
+#fu-computer {
+    display: none;
+}
+#shi-computer {
+    display: none;
+}
+#mi-computer {
+    display: none;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 3em;
+    color: #F8F531;
+}
+
+#choice {
+    display: flex;
+    justify-content: center;
+}
