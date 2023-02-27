@@ -8,31 +8,54 @@ let ButtonFu = document.getElementById("button-fu");
 let ButtonShi = document.getElementById("button-shi");
 let ButtonMi = document.getElementById("button-mi");
 let player = document.querySelector(".card-player");
-let computer = document.getElementsByName("card-computer");
+let computer = document.querySelector(".card-computer");
 
 console.log(player);
 
 ButtonFu.addEventListener("click", () => {
     player.style.display = "none";
     FuPlayer.style.display = "block";
+
+    let randomResult = getRandomInt(0, 3) 
+    let tableImages = ["fu-computer", "shi-computer", "mi-computer" ]
+    let imageComputer = tableImages[randomResult];
+
+
+    document.getElementById(imageComputer).style.display = "block";
+    computer.style.display = "none";
 })
 
 ButtonShi.addEventListener("click", () => {
     player.style.display = "none";
     ShiPlayer.style.display = "block";
+
+    let randomResult = getRandomInt(0, 3) 
+    let tableImages = ["fu-computer", "shi-computer", "mi-computer" ]
+    let imageComputer = tableImages[randomResult];
+
+
+    document.getElementById(imageComputer).style.display = "block";
+    computer.style.display = "none";
 })
 
 ButtonMi.addEventListener("click", () => {
     player.style.display = "none";
     MiPlayer.style.display = "block";
+
+    let randomResult = getRandomInt(0, 3) 
+    let tableImages = ["fu-computer", "shi-computer", "mi-computer" ]
+    let imageComputer = tableImages[randomResult];
+
+
+    document.getElementById(imageComputer).style.display = "block";
+    computer.style.display = "none";
 })
 
-FuComputer = '0';
-ShiComputer = '1';
-MiComputer = '2';
 
-function getRandomInt(0,2) {
-    min = Math.ceil(0);
-    max = Math.floor(2);
+function getRandomInt(borneMin, borneMax) {
+    min = Math.ceil(borneMin);
+    max = Math.floor(borneMax);
+
     return Math.floor(Math.random() * (max - min)) + min;
 };
+
