@@ -9,11 +9,18 @@
 </head>
 
 <header>
-    <img src="assets/img/logo.png" width="15%">
+    <img id="logo" src="assets/img/logo.png" width="20%">
     <h1>SHI-FU-MI</h1>
 </header>
     
 <body>
+    <div>
+        <a href="#score-title" id="arrow">
+            <img id= imgarrow src="assets/img/arrow.png">
+        </a>
+        <p id="text-arrow">Appuyez sur la flèche</p>
+    </div>
+
     <div id="score">
         <p id="score-title">Score</p>
         <p id="player-score">0</p>
@@ -22,26 +29,28 @@
     <div id="gameset">
         <div id="player">
             <h2 class="card-player">PLAYER</h2>
-            <img id="fu-player" src="assets/img/fu-player.png" width="20%">
-            <img id="shi-player" src="assets/img/shi-player.png" width="20%">
-            <img id="mi-player" src="assets/img/mi-player.png" width="20%">
+            <img id="fu-player" src="assets/img/fu-player.png">
+            <img id="shi-player" src="assets/img/shi-player.png">
+            <img id="mi-player" src="assets/img/mi-player.png">
         </div>
         <div id="computer">
             <h2 class="card-computer">COMPUTER</h2>
-            <img id="fu-computer" src="assets/img/fu-computer.png" width="20%">
-            <img id="shi-computer" src="assets/img/shi-computer.png" width="20%">
-            <img id="mi-computer" src="assets/img/mi-computer.png" width="20%">
+            <img id="fu-computer" src="assets/img/fu-computer.png">
+            <img id="shi-computer" src="assets/img/shi-computer.png">
+            <img id="mi-computer" src="assets/img/mi-computer.png">
         </div>
     </div>
 
     <div>
         <h3>Choisissez votre carte</h3>
         <div id="choice">
-            <img id="button-shi" class="player-btn" src="assets/img/button-shi.png" width="10%">
-            <img id="button-fu" class="player-btn" src="assets/img/button-fu.png" width="10%" height="auto">
-            <img id="button-mi" class="player-btn" src="assets/img/button-mi.png" width="10%">
+            <img id="button-shi" class="player-btn" src="assets/img/button-shi.png">
+            <img id="button-fu" class="player-btn" src="assets/img/button-fu.png">
+            <img id="button-mi" class="player-btn" src="assets/img/button-mi.png">
         </div>
     </div>
+
+    
 
     <script src="assets/js/script.js"></script>
 </body>

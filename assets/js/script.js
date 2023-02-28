@@ -30,7 +30,7 @@ ButtonShi.addEventListener("click", () => {
     ShiPlayer.style.display = "block";
 
     let randomResult = getRandomInt(0, 3) 
-    let tableImages = ["fu-computer", "shi-computer", "mi-computer" ]
+    let tableImages = ["shi-computer", "fu-computer", "mi-computer" ]
     let imageComputer = tableImages[randomResult];
 
 
@@ -43,7 +43,7 @@ ButtonMi.addEventListener("click", () => {
     MiPlayer.style.display = "block";
 
     let randomResult = getRandomInt(0, 3) 
-    let tableImages = ["fu-computer", "shi-computer", "mi-computer" ]
+    let tableImages = ["shi-computer", "fu-computer", "mi-computer" ]
     let imageComputer = tableImages[randomResult];
 
 
